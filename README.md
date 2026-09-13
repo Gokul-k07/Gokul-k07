@@ -3,7 +3,7 @@
 ###
 
 <div align="center">
-  <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://user-images.githubusercontent.com/74038190/240304586-d48893bd-0757-481c-8d7e-ba3e163feae7.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU0OTU5MDEsIm5iZiI6MTc3NTQ5NTYwMSwicGF0aCI6Ii83NDAzODE5MC8yNDAzMDQ1ODYtZDQ4ODkzYmQtMDc1Ny00ODFjLThkN2UtYmEzZTE2M2ZlYWU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDA2VDE3MTMyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThiN2NlYmY1YTU2YzNmOTY2OTA2ZTlmZmE5N2QzZGQ5YzhjMjc4ODQyY2MzMTRhMWZmYmI3NTgxOTUwMGNkZjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9C-wC1FADHopzCT5J-I0EgG_eitALJ-31CZVFuouS7Y" width=1020 height="234">
+ <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://user-images.githubusercontent.com/74038190/240304586-d48893bd-0757-481c-8d7e-ba3e163feae7.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU0OTU5MDEsIm5iZiI6MTc3NTQ5NTYwMSwicGF0aCI6Ii83NDAzODE5MC8yNDAzMDQ1ODYtZDQ4ODkzYmQtMDc1Ny00ODFjLThkN2UtYmEzZTE2M2ZlYWU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDA2VDE3MTMyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThiN2NlYmY1YTU2YzNmOTY2OTA2ZTlmZmE5N2QzZGQ5YzhjMjc4ODQyY2MzMTRhMWZmYmI3NTgxOTUwMGNkZjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9C-wC1FADHopzCT5J-I0EgG_eitALJ-31CZVFuouS7Y" width=1020 height="234">
 </div>
 
 ###
@@ -105,7 +105,6 @@
   </tr>
 </table>
 
-
-
+![LeetCode Stats](https://leetcard.jacoblin.cool/Gokulk_07?theme=dark&font=Baloo%20Tammudu%202&ext=heatmap)
 
 
