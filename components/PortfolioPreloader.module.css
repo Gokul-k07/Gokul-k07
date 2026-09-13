@@ -8,7 +8,8 @@
   overflow: hidden;
   padding: 2rem 1.25rem;
   background: #07070b;
-  color: white;
+  color: #e8e8ed;
+  will-change: transform;
 }
 
 .content {
@@ -24,6 +25,7 @@
   height: auto;
   margin: 0 auto clamp(1.5rem, 4vw, 2.5rem);
   object-fit: contain;
+  /* do not create filter */
 }
 
 .progressArea {
@@ -41,8 +43,9 @@
 .bar {
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #34cded, #9a7cff);
-  box-shadow: 0 0 0.9rem rgb(52 205 237 / 55%);
+  background: linear-gradient(90deg, #22d3ee, #a78bfa, #e879f9);
+  box-shadow: 0 0 0.9rem rgb(34 211 238 / 55%);
+  will-change: width;
 }
 
 .meta {
@@ -50,10 +53,36 @@
   justify-content: space-between;
   gap: 1rem;
   margin-top: 0.75rem;
-  color: rgb(255 255 255 / 72%);
+  color: rgb(232 232 237 / 72%);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+@keyframes phrasePulse {
+  0%, 100% { opacity: 0.42; }
+  50% { opacity: 0.82; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content::before {
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .preloader {
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    width: min(72vw, 16rem);
+  }
+
+  .content::before {
+    font-size: 0.52rem;
+    letter-spacing: 0.18em;
+  }
 }
 
 /* .overlay {

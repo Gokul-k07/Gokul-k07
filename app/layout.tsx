@@ -103,6 +103,9 @@ export const metadata: Metadata = {
       "Portfolio of Gokul K: NEXTSTOP BusTracker, AI Resume Maker, SecurePower. React, TypeScript, Kotlin, Firebase. Tamil Nadu, India.",
     images: ["/gokul-portrait.png"],
   },
+  icons: {
+    icon: "/logo/logo_only_circle.png",
+  },
   category: "technology",
 };
 

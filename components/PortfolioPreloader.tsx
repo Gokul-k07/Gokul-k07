@@ -80,7 +80,7 @@ export function PortfolioPreloader() {
 
               <div className={styles.meta}>
                 <span>Loading Experience</span>
-                <span>{progress}%</span>
+                <span>LOADING {progress}%</span>
               </div>
             </div>
           </div>
