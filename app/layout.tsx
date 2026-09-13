@@ -3,6 +3,7 @@ import { DM_Sans, Syne } from "next/font/google";
 import { InteractiveCursor } from "@/components/InteractiveCursor";
 import { NavBar } from "@/components/NavBar";
 import { PageTransition } from "@/components/PageTransition";
+import { PortfolioPreloader } from "@/components/PortfolioPreloader";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
@@ -141,6 +142,7 @@ export default function RootLayout({
       </head>
       <ThemeProvider>
         <body className="flex min-h-full flex-col bg-background font-sans text-foreground" suppressHydrationWarning>
+          <PortfolioPreloader />
           <NavBar />
           <InteractiveCursor />
           <PageTransition>

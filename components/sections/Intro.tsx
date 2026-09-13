@@ -7,26 +7,52 @@ export function Intro() {
   const splineContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (splineContainerRef.current && !splineContainerRef.current.hasChildNodes()) {
-      // Load the Spline viewer script
-      const script = document.createElement('script');
-      script.type = 'module';
-      script.src = 'https://unpkg.com/@splinetool/viewer@1.12.73/build/spline-viewer.js';
-      document.head.appendChild(script);
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const container = splineContainerRef.current;
+    if (!container) return;
 
-      // Create the spline-viewer element
-      const splineViewer = document.createElement('spline-viewer');
-      splineViewer.setAttribute('url', 'https://prod.spline.design/ky8GD6Q5UD5S8qY9/scene.splinecode');
-      splineViewer.style.width = '900px';
-      splineViewer.style.height = '440px';
-      splineViewer.style.marginLeft = '-100px';
-      splineViewer.style.marginRight = '0px';
-      splineViewer.style.minWidth = '';
-      splineViewer.style.position = 'relative';
-      splineViewer.style.left = '-100px';
+    const syncSpline = () => {
+      if (!mediaQuery.matches) {
+        container.replaceChildren();
+        return;
+      }
 
-      splineContainerRef.current.appendChild(splineViewer);
-    }
+      if (!customElements.get("spline-viewer")) {
+        const existingScript = document.querySelector<HTMLScriptElement>(
+          'script[data-spline-viewer="true"]',
+        );
+
+        if (!existingScript) {
+          const script = document.createElement("script");
+          script.type = "module";
+          script.src = "https://unpkg.com/@splinetool/viewer@1.12.73/build/spline-viewer.js";
+          script.dataset.splineViewer = "true";
+          document.head.appendChild(script);
+        }
+      }
+
+      if (!container.hasChildNodes()) {
+      const splineViewer = document.createElement("spline-viewer");
+      splineViewer.setAttribute("url", "https://prod.spline.design/ky8GD6Q5UD5S8qY9/scene.splinecode");
+      splineViewer.style.width = "900px";
+      splineViewer.style.height = "440px";
+      splineViewer.style.marginLeft = "-100px";
+      splineViewer.style.marginRight = "0px";
+      splineViewer.style.minWidth = "";
+      splineViewer.style.position = "relative";
+      splineViewer.style.left = "-100px";
+
+      container.appendChild(splineViewer);
+      }
+    };
+
+    syncSpline();
+    mediaQuery.addEventListener("change", syncSpline);
+
+    return () => {
+      mediaQuery.removeEventListener("change", syncSpline);
+      container.replaceChildren();
+    };
   }, []);
 
   return (
@@ -34,10 +60,14 @@ export function Intro() {
       <div className="mx-auto max-w-4xl flex flex-col gap-10 md:flex-row md:items-start md:gap-16">
         {/* 3D Robot Spline Embed */}
         <div
-          className="w-full max-w-xs md:w-1/2 md:max-w-sm flex-shrink-0 md:self-start md:justify-start md:flex md:items-start md:pl-0 animate-load delay-0"
+          className="hidden w-full max-w-xs flex-shrink-0 md:flex md:w-1/2 md:max-w-sm md:self-start md:justify-start md:items-start md:pl-0 animate-load delay-0"
           style={{ marginLeft: -100 }}
         >
-          <div className="rounded-2xl overflow-hidden bg-black/30 shadow-lg" ref={splineContainerRef} style={{ marginLeft: -100, marginRight: 0 }} />
+          <div
+            className="rounded-2xl overflow-hidden bg-black/30 shadow-lg"
+            ref={splineContainerRef}
+            style={{ marginLeft: -100, marginRight: 0 }}
+          />
         </div>
         {/* Intro Text */}
         <div className="flex-1">

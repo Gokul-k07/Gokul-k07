@@ -1,0 +1,189 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem 1.25rem;
+  background: #07070b;
+  color: white;
+}
+
+.content {
+  width: min(100%, 34rem);
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: min(72vw, 31rem);
+  max-width: 100%;
+  max-height: 58dvh;
+  height: auto;
+  margin: 0 auto clamp(1.5rem, 4vw, 2.5rem);
+  object-fit: contain;
+}
+
+.progressArea {
+  width: min(100%, 22rem);
+  margin: 0 auto;
+}
+
+.track {
+  height: 0.35rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 14%);
+}
+
+.bar {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #34cded, #9a7cff);
+  box-shadow: 0 0 0.9rem rgb(52 205 237 / 55%);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* .overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #050508;
+  isolation: isolate;
+}
+
+.logoStage {
+  position: relative;
+  width: clamp(110px, 16vw, 220px);
+  aspect-ratio: 2048 / 1714;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 0 18px rgba(34, 211, 238, 0.12));
+}
+
+.logo {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.logoOuter {
+  z-index: 1;
+  clip-path: inset(0 0 48% 0);
+  filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.35));
+}
+
+.logoInner {
+  z-index: 2;
+  clip-path: inset(42% 0 0 0);
+  filter: drop-shadow(0 0 12px rgba(167, 139, 250, 0.3));
+}
+
+.logoAccent {
+  z-index: 3;
+  clip-path: circle(31% at 72% 32%);
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 14px rgba(232, 121, 249, 0.32));
+}
+
+.logoGlow {
+  position: absolute;
+  z-index: -1;
+  width: 78%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  /* background: radial-gradient(circle, rgba(34, 211, 238, 0.18), rgba(167, 139, 250, 0.08) 42%, transparent 72%);
+  filter: blur(22px);
+  pointer-events: none;
+}
+
+.loadingPhrase {
+  position: absolute;
+  top: calc(50% + clamp(64px, 8vw, 96px));
+  left: 50%;
+  margin: 0;
+  color: rgba(232, 232, 237, 0.48);
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-align: center;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  animation: phrase-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes phrase-pulse {
+  0%, 100% { opacity: 0.42; }
+  50% { opacity: 0.82; }
+}
+
+.progressRegion {
+  position: absolute;
+  top: calc(50% + clamp(92px, 12vw, 145px));
+  left: 50%;
+  display: grid;
+  width: min(180px, 46vw);
+  gap: 0.55rem;
+  transform: translateX(-50%);
+  color: #e8e8ed;
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.progressLabel {
+  color: rgba(232, 232, 237, 0.72);
+}
+
+.progressTrack {
+  display: block;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+  background: rgba(232, 232, 237, 0.12);
+}
+
+.progressFill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa, #e879f9);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoStage,
+  .logo,
+  .logoGlow,
+  .loadingPhrase {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+:global(body.preloaderLock) {
+  overflow: hidden;
+}
+ */
